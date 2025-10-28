@@ -1,0 +1,44 @@
+name: bac_thay_tri_nho
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.2
+  audioplayers: ^5.2.1
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  video_player: ^2.9.1
+  rename_app: ^1.6.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: "^0.13.1"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/cards/
+    - assets/audio/
+    - assets/backgrounds/
+    - assets/video/
+    - assets/Icons/
+    
+# THÊM KHỐI NÀY VÀO CUỐI TỆP
+flutter_launcher_icons:
+  # CHỈnh sửa đường dẫn này cho đúng với tên tệp icon của bạn
+  image_path: "assets/Icons/Icon.png"
+  # BẬT để áp dụng cho Android
+  android: true
+  # BẬT để áp dụng cho iOS
+  ios: true
+  # (Tùy chọn) Khuyên dùng: loại bỏ viền trong suốt trên iOS
+  remove_alpha_ios: true
